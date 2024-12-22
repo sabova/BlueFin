@@ -15,16 +15,16 @@ run_installer() {
     case "$distro" in
         ubuntu)
             echo -e "\e[1;100m####     Detected Ubuntu-based system\e[0m"
-            INSTALLER_URL="https://raw.githubusercontent.com/sabrinagoom/BlueFin/refs/heads/main/installer/ubuntu.sh"
+            INSTALLER_URL="https://raw.githubusercontent.com/sabova/BlueFin/refs/heads/main/installer/ubuntu.sh"
             ;;
         debian)
             echo -e "\e[1;100m####     Detected Debian-based system\e[0m"
-            INSTALLER_URL="https://raw.githubusercontent.com/sabrinagoom/BlueFin/refs/heads/main/installer/debian.sh"
+            INSTALLER_URL="https://raw.githubusercontent.com/sabova/BlueFin/refs/heads/main/installer/debian.sh"
             ;;    
         rocky|rhel|almalinux|centos)
             $distro="rhel"
             echo -e "\e[1;100m####     Detected RHEL-based system\e[0m"
-            INSTALLER_URL="https://raw.githubusercontent.com/sabrinagoom/BlueFin/refs/heads/main/installer/rhel.sh"
+            INSTALLER_URL="https://raw.githubusercontent.com/sabova/BlueFin/refs/heads/main/installer/rhel.sh"
             ;;
         *)
             echo -e "\e[1;100m####     This Linux distribution ('$distro') is unsupported by both BlueFin and Pterodactyl Wings\e[0m"
